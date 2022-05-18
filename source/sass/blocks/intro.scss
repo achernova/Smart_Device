@@ -1,0 +1,140 @@
+.intro {
+  background-color: $black-pearl;
+  background-image: url("../img/head-backg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin: 0 auto;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/head-backg@2x.jpg");
+  }
+
+  @include vp-1023 {
+    background-image: url("../img/head-backg-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/head-backg-tablet@2x.jpg");
+    }
+  }
+
+  @media (max-width: 769px) {
+    background-image: url("../img/head-backg-mobile.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/head-backg-mobile@2x.jpg");
+    }
+  }
+}
+
+.intro__container {
+  padding-top: 185px;
+  padding-left: 475px;
+  padding-bottom: 280px;
+  color: $alice-blue;
+
+  @include vp-1023 {
+    padding-top: 180px;
+    padding-left: 50px;
+    padding-bottom: 205px;
+  }
+
+  @media (max-width: 769px) {
+    padding-top: 150px;
+    padding-left: 25px;
+    padding-bottom: 190px;
+  }
+}
+
+.intro__container h1 {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 40px;
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+
+  @include vp-1023 {
+    font-size: 64px;
+    line-height: 75px;
+  }
+
+  @media (max-width: 769px) {
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
+
+.intro__container p {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 40px;
+  font-family: 'PT Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 34px;
+  color: $alice-blue1;
+  width: 681px;
+
+  @include vp-1023 {
+    font-size: 22px;
+    line-height: 34px;
+    width: 670px;
+  }
+
+  @media (max-width: 769px) {
+    font-size: 14px;
+    line-height: 22px;
+    width: 270px;
+  }
+}
+
+.intro__link {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $alice-blue1;
+  border-radius: 3px;
+  background-color: $deep-sky-blue;
+  padding: 15px 25px;
+
+  @include vp-1023 {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  @media (max-width: 769px) {
+    display: none;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 10px 30px;
+  }
+}
+
+.intro__link-mobile {
+  display: none;
+
+  @media (max-width: 769px) {
+    display: block;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $alice-blue1;
+    border-radius: 3px;
+    background-color: $deep-sky-blue;
+    padding: 10px 15px;
+    width: 270px;
+  }
+}
