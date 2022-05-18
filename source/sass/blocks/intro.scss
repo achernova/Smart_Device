@@ -5,6 +5,7 @@
   background-size: cover;
   background-position: center center;
   margin: 0 auto;
+  margin-bottom: 120px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/head-backg@2x.jpg");
@@ -50,7 +51,7 @@
   margin: 0;
   padding: 0;
   padding-bottom: 40px;
-  font-family: 'Roboto Condensed';
+  font-family: 'Roboto Condensed', 'Arial', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 80px;
@@ -73,9 +74,6 @@
   margin: 0;
   padding: 0;
   padding-bottom: 40px;
-  font-family: 'PT Mono';
-  font-style: normal;
-  font-weight: 400;
   font-size: 22px;
   line-height: 34px;
   color: $alice-blue1;
@@ -95,16 +93,18 @@
 }
 
 .intro__link {
+  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-style: bold;
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
-  text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: $alice-blue1;
   border-radius: 3px;
   background-color: $deep-sky-blue;
   padding: 15px 25px;
+  cursor: pointer;
 
   @include vp-1023 {
     font-size: 18px;
@@ -124,8 +124,8 @@
 
   @media (max-width: 769px) {
     display: block;
-    font-family: 'Roboto Condensed';
-    font-style: normal;
+    font-family: 'Roboto Condensed', 'Arial', sans-serif;
+    font-style: bold;
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
@@ -136,5 +136,6 @@
     background-color: $deep-sky-blue;
     padding: 10px 15px;
     width: 270px;
+    cursor: pointer;
   }
 }

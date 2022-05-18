@@ -1,0 +1,86 @@
+.products {
+  margin: 0 auto;
+  padding: 0;
+  background-color: $black-pearl;
+  padding-top: 70px;
+
+}
+
+.products h2 {
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: $color-default-white;
+  margin-bottom: 50px;
+
+}
+
+.products__container {
+  margin: 0 auto;
+  width: 1220px;
+
+  @include vp-1023 {
+    width: 670px;
+  }
+
+  @media (max-width: 769px) {
+    width: 320px;
+  }
+}
+
+.products__list {
+  margin: 0 auto;
+  padding: 0;
+  width: 1220px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 85px;
+
+  @include vp-1023 {
+    width: 670px;
+    grid-template-columns: 1fr;
+  }
+}
+
+.products__item {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: $deep-sky-blue;
+    background-image: url("../img/svg/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+
+    @include vp-1023 {
+      right: 320px;
+    }
+  }
+
+  @include vp-1023 {
+    width: 670px;
+  }
+}
+
+.products__item p {
+  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: $color-default-white;
+  width: 200px;
+  position: absolute;
+  top: 50px;
+  left: 40px;
+}

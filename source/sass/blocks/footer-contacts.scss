@@ -1,0 +1,43 @@
+.footer-contacts h2 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $color-default-white;
+    margin-bottom: 20px;
+}
+
+.footer-contacts__list {
+  margin: 0;
+  padding: 0;
+  width: 345px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-contacts__item {
+  margin-bottom: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-contacts__item p {
+  margin: 0;
+  padding: 0;
+  color: $color-default-white;
+  opacity: 0.7;
+}
+
+.footer-contacts__link {
+  margin: 0;
+  padding: 0;
+  color: $color-default-white;
+  opacity: 0.7;
+}
