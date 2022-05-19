@@ -12,11 +12,10 @@
   @include vp-1023 {
     background-image: none;
     background-color: $deep-sky-blue;
-    width: 670px;
   }
 
   @media (max-width: 769px) {
-    width: 320px;
+    padding-bottom: 90px;
   }
 }
 
@@ -32,7 +31,8 @@
   }
 
   @media (max-width: 769px) {
-    width: 320px;
+    width: 100%;
+    padding: 0 16px;
   }
 }
 
@@ -59,6 +59,13 @@
   line-height: 51px;
   margin-bottom: 15px;
   color: $color-default-white;
+
+  @media (max-width: 769px) {
+    font-size: 30px;
+    line-height: 42px;
+    margin: auto;
+    margin-bottom: 15px;
+  }
 }
 
 .feedback__form-content p {
@@ -68,6 +75,13 @@
   line-height: 22px;
   margin-bottom: 35px;
   color: $color-default-white;
+
+  @media (max-width: 769px) {
+    font-size: 14px;
+    line-height: 19px;
+    width: 270px;
+    margin: auto;
+  }
 }
 
 .feedback__form-wrap {
@@ -76,6 +90,15 @@
 
   @media (max-width: 769px) {
     flex-direction: column;
+    margin: auto;
+    width: 100%;
+  }
+}
+
+.feedback__form-container {
+  @media (max-width: 769px) {
+    width: 100%;
+    margin: auto;
   }
 }
 
@@ -86,6 +109,10 @@
   color: $color-default-white;
   font-size: 16px;
   line-height: 22px;
+
+  @media (max-width: 769px) {
+    width: 100%;
+  }
 }
 
 .feedback__form-container--name input,
@@ -94,6 +121,11 @@
   padding-top: 15px;
   padding-bottom: 15px;
   width: 275px;
+  margin-bottom: 20px;
+
+  @include vp-1023 {
+    width: 320px;
+  }
 }
 
 .feedback__form-container--name {
@@ -103,7 +135,6 @@
 .feedback__form-container textarea {
   width: 580px;
   height: 155px;
-  margin-top: 20px;
   margin-bottom: 35px;
   padding-left: 15px;
   padding-top: 15px;
@@ -113,7 +144,7 @@
   }
 
   @media (max-width: 769px) {
-    width: 270px;
+    width: 100%;
   }
 }
 
@@ -135,6 +166,12 @@
   margin-right: 80px;
   border: none;
   cursor: pointer;
+
+  @media (max-width: 769px) {
+    margin: auto;
+    width: 100%;
+    margin-bottom: 25px;
+  }
 }
 
 .feedback__form-container--checkbox {
@@ -146,6 +183,11 @@
   line-height: 16px;
   color: $color-default-white;
   position: relative;
+  display: block;
+
+  @media (max-width: 769px) {
+    margin-left: 15px;
+  }
 }
 
 .feedback__form-container--checkbox input + label::before {

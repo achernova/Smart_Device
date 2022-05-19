@@ -1,5 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
+import {getDetails} from './modules/description.js';
+import {getModal} from './modules/modal-window.js';
 
 // ---------------------------------
 
@@ -10,6 +12,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
   iosVhFix();
 
+  getDetails();
+  getModal();
   // Modules
   // ---------------------------------
 
