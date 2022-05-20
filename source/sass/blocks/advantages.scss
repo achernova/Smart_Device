@@ -2,6 +2,10 @@
   margin: 0 auto;
   padding: 0;
   margin-bottom: 120px;
+
+  @media (max-width: 769px) {
+    margin-bottom: 47px;
+  }
 }
 
 .advantages__list {
@@ -45,7 +49,8 @@
     }
 
     @media (max-width: 769px) {
-      height: 325px;
+      height: 341px;
+      left: -1px;
     }
   }
 
@@ -56,7 +61,21 @@
 
   @media (max-width: 769px) {
     width: 270px;
+    height: 340px;
+    padding-top: 30px;
+    padding-left: 30px;
+  }
+}
+
+.advantages__item--confident,
+.advantages__item--price {
+  
+  @media (max-width: 769px) {
     height: 325px;
+    &::before {
+        height: 325px;
+        left: -1px;
+    }
   }
 }
 
@@ -68,6 +87,34 @@
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
+
+  @media (max-width: 769px) {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 18px;
+  }
+}
+
+.advantages__item--confident .advantages__icon,
+.advantages__item--price .advantages__icon {
+  @media (max-width: 769px) {
+    margin-bottom: 15px;
+  }
+}
+
+.advantages__item--confident h2,
+.advantages__item--price h2 {
+  @media (max-width: 769px) {
+    line-height: 26px;
+    width: 200px;
+  }
+}
+
+.advantages__item--time h2,
+.advantages--sails h2 {
+  @media (max-width: 769px) {
+    line-height: 14px;
+  }
 }
 
 .advantages__item h2 {
@@ -80,6 +127,11 @@
   margin: 0;
   padding: 0;
   margin-bottom: 15px;
+
+  @media (max-width: 769px) {
+    font-size: 20px;
+    margin-bottom: 13px;
+  }
 }
 
 .advantages__item p {
@@ -89,9 +141,15 @@
   color: $black-pearl;
   margin: 0;
   padding: 0;
+
+  @media (max-width: 769px) {
+    font-size: 14px;
+    line-height: 19px;
+  }
 }
 
 .advantages__item:hover {
+
   @media screen and (min-width: $vp-1024) {
       background-color: $deep-sky-blue;
       border-color: $deep-sky-blue;

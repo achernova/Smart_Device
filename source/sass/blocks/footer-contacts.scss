@@ -64,6 +64,42 @@
   }
 }
 
-.footer-contacts span {
-  color: $color-default-white;
+.footer-contacts__toggle {
+  top: 0;
+  right: 0;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 17px;
+    width: 10px;
+    height: 1px;
+    background-color: $color-default-white;
+    z-index: 2;
+  }
+
+  &::before {
+    box-shadow: none;
+    top: 16px;
+  }
+
+  &::after {
+    transform: rotate(-90deg);
+    top: 16px;
+  }
+
+  display: none;
+
+  @media (max-width: 769px) {
+    display: block;
+  }
 }

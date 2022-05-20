@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0;
   margin-bottom: 120px;
+
+  @media (max-width: 769px) {
+    margin-bottom: 82px;
+  }
 }
 
 .description__container {
@@ -17,9 +21,8 @@
   @media (max-width: 769px) {
     flex-direction: column;
     width: 100%;
-    padding: 0 16px;
+    padding: 0 25px;
   }
-
 }
 
 .description__img {
@@ -55,6 +58,9 @@
 
   @media (max-width: 769px) {
     width: 270px;
+    font-size: 28px;
+    line-height: 39px;
+    margin-bottom: 13px;
   }
 }
 
@@ -69,6 +75,7 @@
   @media (max-width: 769px) {
     font-size: 14px;
     line-height: 19px;
+    margin-bottom: 16px;
   }
 }
 
@@ -91,6 +98,11 @@
   background-color: transparent;
   width: 180px;
   cursor: pointer;
+
+  @media (max-width: 769px) {
+    width: 160px;
+    padding: 7px 12px;
+  }
 }
 
 .description__paragraph span {

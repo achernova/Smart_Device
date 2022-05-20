@@ -681,7 +681,6 @@ button,
   background-color: #00b2ff;
   z-index: 10;
   margin: 0 auto;
-  padding-top: 40px;
   padding-bottom: 40px;
 }
 
@@ -807,7 +806,6 @@ button,
 }
 
 .modal__close {
-  position: absolute;
   top: 0;
   right: 0;
   display: block;
@@ -820,7 +818,7 @@ button,
 }
 
 .is-open .modal__close {
-  top: -70px;
+  top: 20px;
   left: 450px;
 }
 
@@ -828,7 +826,7 @@ button,
 .is-open .modal__close::after {
   content: "";
   position: absolute;
-  top: 0;
+  top: 13px;
   left: 0;
   width: 30px;
   height: 2px;
@@ -842,14 +840,14 @@ button,
   transform: rotate(45deg);
   -webkit-box-shadow: none;
   box-shadow: none;
-  top: 108px;
+  top: 13px;
 }
 
 .is-open .modal__close::after {
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
-  top: 108px;
+  top: 13px;
 }
 
 .modal__overlay {
@@ -972,9 +970,11 @@ button,
 
 .intro__container {
   padding-top: 185px;
-  padding-left: 475px;
+  padding-left: 0;
   padding-bottom: 280px;
   color: #f2f5f6;
+  margin: 0 auto;
+  width: 1220px;
 }
 
 .intro__container h1 {
@@ -1217,6 +1217,11 @@ button,
   background-position: center;
   bottom: 0;
   right: 0;
+  cursor: pointer;
+}
+
+.products__link {
+  margin: 0;
   cursor: pointer;
 }
 
@@ -1508,12 +1513,42 @@ button,
   width: 220px;
 }
 
-.footer-navigation span {
+.footer-navigation__toggle {
+  top: 0;
+  right: 0;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  position: relative;
   display: none;
 }
 
-.footer-navigation span {
-  color: #ffffff;
+.footer-navigation__toggle::before,
+.footer-navigation__toggle::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: 17px;
+  width: 10px;
+  height: 1px;
+  background-color: #ffffff;
+  z-index: 2;
+}
+
+.footer-navigation__toggle::before {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  top: 16px;
+}
+
+.footer-navigation__toggle::after {
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  top: 16px;
 }
 
 .footer-contacts h2 {
@@ -1572,8 +1607,42 @@ button,
   display: none;
 }
 
-.footer-contacts span {
-  color: #ffffff;
+.footer-contacts__toggle {
+  top: 0;
+  right: 0;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  position: relative;
+  display: none;
+}
+
+.footer-contacts__toggle::before,
+.footer-contacts__toggle::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: 17px;
+  width: 10px;
+  height: 1px;
+  background-color: #ffffff;
+  z-index: 2;
+}
+
+.footer-contacts__toggle::before {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  top: 16px;
+}
+
+.footer-contacts__toggle::after {
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  top: 16px;
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
@@ -1659,8 +1728,8 @@ button,
 
   .intro__container {
     padding-top: 180px;
-    padding-left: 50px;
     padding-bottom: 205px;
+    width: 670px;
   }
 
   .intro__container h1 {
@@ -1782,7 +1851,11 @@ button,
   }
 
   .page-header__item--email {
-    margin-left: 137px;
+    margin-left: 127px;
+  }
+
+  .page-header__item--phone {
+    margin-left: 17px;
   }
 
   .page-header__logo {
@@ -1797,23 +1870,27 @@ button,
 
   .intro {
     background-image: url("../img/head-backg-mobile.jpg");
+    margin-bottom: 50px;
   }
 
   .intro__container {
     padding-top: 150px;
     padding-left: 25px;
     padding-bottom: 190px;
+    max-width: 100%;
   }
 
   .intro__container h1 {
     font-size: 36px;
     line-height: 42px;
+    padding-bottom: 10px;
   }
 
   .intro__container p {
     font-size: 14px;
     line-height: 22px;
     width: 270px;
+    padding-bottom: 42px;
   }
 
   .intro__link {
@@ -1835,9 +1912,13 @@ button,
     color: #f2f5f7;
     border-radius: 3px;
     background-color: #00b2ff;
-    padding: 10px 15px;
+    padding: 12px 40px;
     width: 270px;
     cursor: pointer;
+  }
+
+  .advantages {
+    margin-bottom: 47px;
   }
 
   .advantages__list {
@@ -1847,12 +1928,62 @@ button,
   }
 
   .advantages__item::before {
-    height: 325px;
+    height: 341px;
+    left: -1px;
   }
 
   .advantages__item {
     width: 270px;
+    height: 340px;
+    padding-top: 30px;
+    padding-left: 30px;
+  }
+
+  .advantages__item--confident,
+  .advantages__item--price {
     height: 325px;
+  }
+
+  .advantages__item--confident::before,
+  .advantages__item--price::before {
+    height: 325px;
+    left: -1px;
+  }
+
+  .advantages__icon {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 18px;
+  }
+
+  .advantages__item--confident .advantages__icon,
+  .advantages__item--price .advantages__icon {
+    margin-bottom: 15px;
+  }
+
+  .advantages__item--confident h2,
+  .advantages__item--price h2 {
+    line-height: 26px;
+    width: 200px;
+  }
+
+  .advantages__item--time h2,
+  .advantages--sails h2 {
+    line-height: 14px;
+  }
+
+  .advantages__item h2 {
+    font-size: 20px;
+    margin-bottom: 13px;
+  }
+
+  .advantages__item p {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .description {
+    margin-bottom: 82px;
   }
 
   .description__container {
@@ -1861,7 +1992,7 @@ button,
     -ms-flex-direction: column;
     flex-direction: column;
     width: 100%;
-    padding: 0 16px;
+    padding: 0 25px;
   }
 
   .description__img {
@@ -1874,11 +2005,20 @@ button,
 
   .description__paragraph h2 {
     width: 270px;
+    font-size: 28px;
+    line-height: 39px;
+    margin-bottom: 13px;
   }
 
   .description__paragraph p {
     font-size: 14px;
     line-height: 19px;
+    margin-bottom: 16px;
+  }
+
+  .description__button {
+    width: 160px;
+    padding: 7px 12px;
   }
 
   .description__paragraph span {
@@ -2030,7 +2170,7 @@ button,
     display: none;
   }
 
-  .footer-navigation span {
+  .footer-navigation__toggle {
     display: block;
   }
 
@@ -2053,6 +2193,10 @@ button,
   }
 
   .footer-contacts span {
+    display: block;
+  }
+
+  .footer-contacts__toggle {
     display: block;
   }
 }

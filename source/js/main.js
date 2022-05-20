@@ -2,6 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {getDetails} from './modules/description.js';
 import {getModal} from './modules/modal-window.js';
+import {getOpenMenu} from './modules/footer-menu.js';
 
 // ---------------------------------
 
@@ -14,6 +15,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   getDetails();
   getModal();
+  getOpenMenu();
   // Modules
   // ---------------------------------
 
