@@ -1,7 +1,11 @@
 .description {
   margin: 0;
   padding: 0;
-  margin-bottom: 120px;
+  margin-bottom: 100px;
+
+  @include vp-1023 {
+    margin-bottom: 79px;
+  }
 
   @media (max-width: 769px) {
     margin-bottom: 82px;
@@ -13,6 +17,10 @@
   width: 1220px;
   display: flex;
   flex-direction: row;
+
+  @media (max-width: 1248px) {
+    width: 670px;
+  }
 
   @include vp-1023 {
     width: 670px;
@@ -27,6 +35,11 @@
 
 .description__img {
   margin-right: 100px;
+
+  @include vp-1023 {
+    margin-right: 27px;
+    margin-top: 5px;
+  }
 
   @media (max-width: 769px) {
     display: none;
@@ -53,8 +66,12 @@
   line-height: 51px;
   margin: 0;
   padding: 0;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
   color: $black-pearl;
+
+  @include vp-1023 {
+    margin-bottom: 12px;
+  }
 
   @media (max-width: 769px) {
     width: 270px;
@@ -67,10 +84,14 @@
 .description__paragraph p {
   margin: 0;
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
   color: $black-pearl;
   font-size: 16px;
   line-height: 22px;
+
+  @include vp-1023 {
+    margin-bottom: 17px;
+  }
 
   @media (max-width: 769px) {
     font-size: 14px;
@@ -97,7 +118,12 @@
   padding: 14px 12px;
   background-color: transparent;
   width: 180px;
+  margin-top: 19px;
   cursor: pointer;
+
+  @include vp-1023 {
+    margin-top: 0;
+  }
 
   @media (max-width: 769px) {
     width: 160px;

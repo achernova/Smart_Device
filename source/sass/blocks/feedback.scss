@@ -3,7 +3,7 @@
   padding: 0;
   background-color: $deep-sky-blue;
   padding-top: 120px;
-  padding-bottom: 250px;
+  padding-bottom: 248px;
   position: relative;
   background-image: url("../img/form-backg.png");
   background-repeat: no-repeat;
@@ -12,9 +12,12 @@
   @include vp-1023 {
     background-image: none;
     background-color: $deep-sky-blue;
+    padding-top: 44px;
+    padding-bottom: 123px;
   }
 
   @media (max-width: 769px) {
+    padding-top: 48px;
     padding-bottom: 90px;
   }
 }
@@ -26,18 +29,23 @@
   display: flex;
   flex-direction: row;
 
+  @media (max-width: 1248px) {
+    width: 670px;
+  }
+
   @include vp-1023 {
     width: 670px;
   }
 
   @media (max-width: 769px) {
     width: 100%;
-    padding: 0 16px;
+    padding: 0 25px;
   }
 }
 
 .feedback__img {
   margin-right: 120px;
+  margin-top: 127px;
 
   @include vp-1023 {
     display: none;
@@ -48,6 +56,16 @@
   width: 580px;
   display: flex;
   flex-direction: column;
+  padding-top: 46px;
+
+  @include vp-1023 {
+    padding-top: 0;
+    width: 670px;
+  }
+
+  @media (max-width: 769px) {
+    width: 100%;
+  }
 }
 
 .feedback__form-content h3 {
@@ -60,11 +78,15 @@
   margin-bottom: 15px;
   color: $color-default-white;
 
+  @include vp-1023 {
+    margin-bottom: 8px;
+  }
+
   @media (max-width: 769px) {
     font-size: 30px;
     line-height: 42px;
     margin: auto;
-    margin-bottom: 15px;
+    margin-bottom: 7px;
   }
 }
 
@@ -73,14 +95,30 @@
   padding: 0;
   font-size: 16px;
   line-height: 22px;
-  margin-bottom: 35px;
+  margin-bottom: 31px;
   color: $color-default-white;
+
+  @include vp-1023 {
+    margin-bottom: 24px;
+  }
 
   @media (max-width: 769px) {
     font-size: 14px;
     line-height: 19px;
     width: 270px;
     margin: auto;
+    margin-bottom: 31px;
+  }
+}
+
+.feedback__form-data {
+  display: flex;
+  flex-direction: row;
+
+  @media (max-width: 769px) {
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
   }
 }
 
@@ -135,16 +173,20 @@
 .feedback__form-container textarea {
   width: 580px;
   height: 155px;
-  margin-bottom: 35px;
+  margin-bottom: 28px;
   padding-left: 15px;
-  padding-top: 15px;
+  padding-top: 23px;
 
   @include vp-1023 {
     width: 670px;
+    padding-top: 29px;
   }
 
   @media (max-width: 769px) {
     width: 100%;
+    height: 177px;
+    padding-top: 21px;
+    margin-bottom: 25px;
   }
 }
 
@@ -161,21 +203,42 @@
   text-transform: uppercase;
   color: $color-default-white;
   background-color: $black-pearl;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  margin-right: 80px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  margin-right: 73px;
   border: none;
+  width: 401px;
   cursor: pointer;
+
+  @include vp-1023 {
+    width: 265px;
+    margin-right: 0;
+  }
 
   @media (max-width: 769px) {
     margin: auto;
     width: 100%;
-    margin-bottom: 25px;
+    margin-bottom: 23px;
+    padding-top: 14px;
+    padding-bottom: 14px;
   }
 }
 
 .feedback__form-container--checkbox {
   position: relative;
+  padding-top: 14px;
+
+  @include vp-1023 {
+    width: 340px;
+    padding-left: 110px;
+    padding-top: 9px;
+  }
+
+  @media (max-width: 769px) {
+    padding-top: 0;
+    width: 270px;
+    padding-left: 0;
+  }
 }
 
 .feedback__form-label--checkbox {
@@ -186,19 +249,26 @@
   display: block;
 
   @media (max-width: 769px) {
-    margin-left: 15px;
+    margin-left: 31px;
   }
 }
 
 .feedback__form-container--checkbox input + label::before {
   position: absolute;
   content: '';
-  width: 18px;
-  height: 18px;
+  width: 15px;
+  height: 15px;
   background-color: transparent;
   border: 1px solid $color-default-white;
-  top: 11px;
-  left: -24px;
+  top: 8px;
+  left: -25px;
+
+  @media (max-width: 769px) {
+    width: 13px;
+    height: 13px;
+    top: 9px;
+    left: -25px;
+  }
 }
 
 .feedback__form-container--checkbox input + label::after {
@@ -208,6 +278,11 @@
   height: 10px;
   background-image: url("../img/svg/tick.svg");
   background-repeat: no-repeat;
-  top: 17px;
-  left: -20px;
+  top: 12px;
+  left: -21px;
+
+  @media (max-width: 769px) {
+    top: 11px;
+    left: -23px;
+  }
 }

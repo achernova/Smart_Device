@@ -4,36 +4,31 @@ const buttonCont = document.getElementById('toggle__contact-footer');
 const contactNav = document.getElementById('contact-footer');
 
 const getOpenMenu = () => {
+  footerNav.style.display = 'none';
+  contactNav.style.display = 'none';
+
   buttonNav.addEventListener('click', function () {
-    footerNav.style.display = 'block';
-    let styleNav = footerNav.style.display = 'block';
 
-    if (styleNav) {
-      buttonNav.addEventListener('click', function () {
-        footerNav.style.display = 'none';
-      });
-
-      buttonCont.addEventListener('click', function () {
-        contactNav.style.display = 'block';
-        footerNav.style.display = 'none';
-      });
+    if (footerNav.style.display === 'none') {
+      footerNav.style.display = 'flex';
+      contactNav.style.display = 'none';
+    } else {
+      footerNav.style.display = 'none';
     }
+
+    buttonNav.textContent = buttonNav.textContent === '+' ? '-' : '+';
   });
 
   buttonCont.addEventListener('click', function () {
-    contactNav.style.display = 'block';
-    let styleContact = contactNav.style.display = 'block';
 
-    if (styleContact) {
-      buttonCont.addEventListener('click', function () {
-        contactNav.style.display = 'none';
-      });
+    if (contactNav.style.display === 'none') {
+      contactNav.style.display = 'flex';
+      footerNav.style.display = 'none';
 
-      buttonNav.addEventListener('click', function () {
-        footerNav.style.display = 'block';
-        contactNav.style.display = 'none';
-      });
+    } else {
+      contactNav.style.display = 'none';
     }
+    buttonCont.textContent = buttonCont.textContent === '+' ? '-' : '+';
   });
 };
 

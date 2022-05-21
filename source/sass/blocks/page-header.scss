@@ -11,7 +11,7 @@
 
   @include vp-1023 {
     height: 100px;
-    padding-top: 20px;
+    padding-top: 13px;
   }
 
   @media (max-width: 769px) {
@@ -23,23 +23,64 @@
 .page-header__menu {
   margin: 0 auto;
   padding: 0;
-  width: 1222px;
+  width: 1220px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
 
-  @include vp-1279 {
-    width: 940px;
+  @media (max-width: 1248px) {
+    width: 670px;
   }
 
   @include vp-1023 {
+    margin: 0 auto;
     width: 670px;
   }
 
   @media (max-width: 769px) {
     width: 270px;
+  }
+}
+
+.page-header__item--logo {
+  margin-right: 159px;
+
+  @include vp-1023 {
+    padding-top: 7px;
+    margin-right: 0;
+  }
+
+  @media (max-width: 769px) {
+    padding-top: 0;
+  }
+}
+
+.page-header__item--email {
+  margin-right: 121px;
+
+  @include vp-1023 {
+    margin: 0;
+    margin-left: 343px;
+    margin-right: 25px;
+  }
+
+  @media (max-width: 769px) {
+    margin-left: 136px;
+    margin-right: 0;
+  }
+}
+
+.page-header__item--phone {
+  margin-right: 164px;
+
+  @include vp-1023 {
+    margin-right: 0;
+  }
+
+  @media (max-width: 769px) {
+    margin-left: 21px;
   }
 }
 
@@ -51,32 +92,24 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
+  padding-top: 14px;
+
+  @include vp-1023 {
+    padding-top: 16px;
+  }
+
+  @media (max-width: 769px) {
+    padding-top: 5px;
+  }
 }
 
 .page-header__item--email .page-header__link,
 .page-header__item--phone .page-header__link {
-
   @include vp-1023 {
     display: none;
   }
 }
 
-.page-header__item--email {
-  @include vp-1023 {
-    margin: 0;
-    margin-left: 336px;
-  }
-
-  @media (max-width: 769px) {
-    margin-left: 127px;
-  }
-}
-
-.page-header__item--phone {
-  @media (max-width: 769px) {
-    margin-left: 17px;
-  }
-}
 .page-header__link-icon {
   margin: 0;
   margin-right: 15px;
@@ -120,6 +153,8 @@
   border: 1px solid $alice-blue1;
   border-radius: 3px;
   padding: 10px 15px;
+  width: 160px;
+  margin-top: 6px;
   cursor: pointer;
 
   @include vp-1023 {

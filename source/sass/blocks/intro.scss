@@ -5,6 +5,7 @@
   background-size: cover;
   background-position: center center;
   margin: 0 auto;
+  padding-bottom: 16px;
   margin-bottom: 120px;
 
   @media (min-resolution: 2dppx) {
@@ -13,6 +14,7 @@
 
   @include vp-1023 {
     background-image: url("../img/head-backg-tablet.jpg");
+    margin-bottom: 80px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/head-backg-tablet@2x.jpg");
@@ -30,12 +32,16 @@
 }
 
 .intro__container {
-  padding-top: 185px;
+  padding-top: 304px;
   padding-left: 0;
   padding-bottom: 280px;
   color: $alice-blue;
   margin: 0 auto;
   width: 1220px;
+
+  @media (max-width: 1248px) {
+    width: 670px;
+  }
 
   @include vp-1023 {
     padding-top: 180px;
@@ -46,7 +52,7 @@
   @media (max-width: 769px) {
     padding-top: 150px;
     padding-left: 25px;
-    padding-bottom: 190px;
+    padding-bottom: 174px;
     max-width: 100%;
   }
 }
@@ -55,18 +61,22 @@
 .intro__container h1 {
   margin: 0;
   padding: 0;
-  padding-bottom: 40px;
+  padding-bottom: 34px;
   font-family: 'Roboto Condensed', 'Arial', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 80px;
   line-height: 94px;
-  letter-spacing: 0.07em;
+  letter-spacing: 0.083em;
   text-transform: uppercase;
+  margin-left: 125px;
+
 
   @include vp-1023 {
     font-size: 64px;
     line-height: 75px;
+    margin-left: 0;
+    padding-bottom: 0;
   }
 
   @media (max-width: 769px) {
@@ -79,16 +89,19 @@
 .intro__container p {
   margin: 0;
   padding: 0;
-  padding-bottom: 40px;
+  padding-bottom: 62px;
   font-size: 22px;
   line-height: 34px;
   color: $alice-blue1;
   width: 681px;
+  margin-left: 125px;
 
   @include vp-1023 {
     font-size: 22px;
     line-height: 34px;
     width: 670px;
+    margin-left: 0;
+    padding-bottom: 74px;
   }
 
   @media (max-width: 769px) {
@@ -101,21 +114,23 @@
 
 .intro__link {
   font-family: 'Roboto Condensed', 'Arial', sans-serif;
-  font-style: bold;
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  text-align: center;
   color: $alice-blue1;
   border-radius: 3px;
   background-color: $deep-sky-blue;
-  padding: 15px 25px;
+  padding: 16px 30px;
   cursor: pointer;
+  margin-left: 125px;
 
   @include vp-1023 {
     font-size: 18px;
     line-height: 21px;
+    margin-left: 45px;
   }
 
   @media (max-width: 769px) {

@@ -3,6 +3,10 @@
   padding: 0;
   margin-bottom: 120px;
 
+  @include vp-1023 {
+    margin-bottom: 76px;
+  }
+
   @media (max-width: 769px) {
     margin-bottom: 47px;
   }
@@ -16,6 +20,10 @@
   gap: 30px;
   width: 1220px;
   justify-items: center;
+
+  @media (max-width: 1248px) {
+    width: 670px;
+  }
 
   @include vp-1023 {
     width: 670px;
@@ -33,7 +41,7 @@
   height: 300px;
   border: 1px solid $whisper;
   padding-top: 40px;
-  padding-left: 45px;
+  padding-left: 42px;
 
   &::before {
     content: '';
@@ -42,7 +50,7 @@
     height: 300px;
     background-color: $deep-sky-blue;
     top: -2px;
-    left: 0;
+    left: -1px;
 
     @include vp-1023 {
       height: 360px;
@@ -54,9 +62,16 @@
     }
   }
 
+  @media (max-width: 1248px) {
+    width: 320px;
+    height: 360px;
+    padding-left: 44px;
+  }
+
   @include vp-1023 {
     width: 320px;
     height: 360px;
+    padding-left: 44px;
   }
 
   @media (max-width: 769px) {
@@ -69,7 +84,7 @@
 
 .advantages__item--confident,
 .advantages__item--price {
-  
+
   @media (max-width: 769px) {
     height: 325px;
     &::before {
@@ -86,12 +101,28 @@
 .advantages__icon {
   margin: 0;
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
+
+  @include vp-1023 {
+    margin-bottom: 10px;
+  }
 
   @media (max-width: 769px) {
     width: 30px;
     height: 30px;
     margin-bottom: 18px;
+  }
+}
+
+.advantages__item--confident .advantages__icon {
+  @include vp-1023 {
+    margin-bottom: 7px;
+  }
+}
+
+.advantages__item--price .advantages__icon {
+  @include vp-1023 {
+    margin-bottom: 4px;
   }
 }
 
@@ -102,20 +133,6 @@
   }
 }
 
-.advantages__item--confident h2,
-.advantages__item--price h2 {
-  @media (max-width: 769px) {
-    line-height: 26px;
-    width: 200px;
-  }
-}
-
-.advantages__item--time h2,
-.advantages--sails h2 {
-  @media (max-width: 769px) {
-    line-height: 14px;
-  }
-}
 
 .advantages__item h2 {
   font-family: 'Roboto Condensed', 'Arial', sans-serif;
@@ -126,7 +143,11 @@
   color: $deep-sky-blue;
   margin: 0;
   padding: 0;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
+
+  @include vp-1023 {
+    margin-bottom: 6px;
+  }
 
   @media (max-width: 769px) {
     font-size: 20px;
@@ -147,6 +168,29 @@
     line-height: 19px;
   }
 }
+
+.advantages__item--price h2 {
+  @include vp-1023 {
+    margin-bottom: 4px;
+  }
+}
+
+.advantages__item--confident h2,
+.advantages__item--price h2 {
+
+  @media (max-width: 769px) {
+    line-height: 26px;
+    width: 200px;
+  }
+}
+
+.advantages__item--time h2,
+.advantages--sails h2 {
+  @media (max-width: 769px) {
+    line-height: 14px;
+  }
+}
+
 
 .advantages__item:hover {
 

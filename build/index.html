@@ -15,8 +15,8 @@
     <div class="wrapper">
       <header class="page-header">
         <div class="container">
-          <ul class="page-header__menu">
-            <li class="page-header__item page-header__item--logo">
+          <div class="page-header__menu">
+            <div class="page-header__item page-header__item--logo">
               <a href="" class="page-header__link">
                 <svg class="page-header__logo" width="215" height="55">
                   <use xlink:href="img/sprite.svg#logo"></use>
@@ -25,27 +25,25 @@
                   <use xlink:href="img/sprite.svg#logo-mobile"></use>
                 </svg>
               </a>
-            </li>
-            <li class="page-header__item page-header__item--email">
+            </div>
+            <div class="page-header__item page-header__item--email">
               <a href="#" class="page-header__link-icon">
                 <svg width="21" height="20">
                   <use xlink:href="img/sprite.svg#icon-email"></use>
                 </svg>
               </a>
               <a href="mailto:info@sd.ru" class="page-header__link">info@sd.ru</a>
-            </li>
-            <li class="page-header__item page-header__item--phone">
+            </div>
+            <div class="page-header__item page-header__item--phone">
               <a href="#" class="page-header__link-icon">
                 <svg width="21" height="20">
                   <use xlink:href="img/sprite.svg#icon-phone"></use>
                 </svg>
               </a>
               <a href="tel:+74950005252" class="page-header__link">+7 (495) 000 52 52</a>
-            </li>
-            <li class="page-header__item page-header__item--button">
-              <button class="page-header__button" type="button" data-element="call">Заказать звонок</button>
-            </li>
-          </ul>
+            </div>
+            <button class="page-header__button" type="button" data-element="call">Заказать звонок</button>
+          </div>
         </div>
       </header>
 
@@ -149,7 +147,7 @@
                       <!-- 350 700 -->
                       <img src="img/card1.jpg" width="350" height="650" srcset="img/card1@2x.jpg 2x" alt="карточка 1">
                     </picture>
-                    <p>Производство печатных плат</p>
+                    <p>Производство печатных&nbsp;плат</p>
                     </a>
                 </li>
                 <li class="products__item">
@@ -199,7 +197,7 @@
               <h3>Остались вопросы? Задайте их нам!</h3>
               <p>Мы проконсультируем Вас бесплатно</p>
               <form class="feedback__form" action="https://echo.htmlacademy.ru" method="POST">
-                <div class="feedback__form-wrap">
+                <div class="feedback__form-data">
                   <div class="feedback__form-container feedback__form-container--name">
                     <label class="feedback__form-label feedback__form-label--name visually-hidden" for="name">Имя</label>
                     <input type="text" name="name" id="name" placeholder="Имя" required>
@@ -233,7 +231,7 @@
         <div class="page-footer__content">
 
           <div class="page-footer__social-container">
-            <a href="" class="page-footer__link">
+            <a href="" class="page-footer__link-logo">
               <svg class="page-footer__logo" width="215" height="55">
                 <use xlink:href="img/sprite.svg#logo"></use>
               </svg>
@@ -267,7 +265,7 @@
 
             <nav class="footer-navigation">
               <h2>Разделы сайта</h2>
-              <button class="footer-navigation__toggle" type="button" id="toggle__nav-footer"><span class="visually-hidden">+</span></button>
+              <button class="footer-navigation__toggle" type="button" id="toggle__nav-footer">+</button>
               <ul class="footer-navigation__list" id="nav-footer">
                 <li class="footer-navigation__item">
                   <a href="" class="footer-navigation__link">О компании</a>
@@ -296,7 +294,7 @@
 
             <div class="footer-contacts">
               <h2>Наш офис</h2>
-              <button class="footer-contacts__toggle" type="button" id="toggle__contact-footer"><span class="visually-hidden">+</span></button>
+              <button class="footer-contacts__toggle" type="button" id="toggle__contact-footer">+</button>
               <ul class="footer-contacts__list" id="contact-footer">
                 <li class="footer-contacts__item">
                   <p>г. Мытищи, Олимпийский проспект, д.10</p>

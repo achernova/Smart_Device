@@ -2,10 +2,39 @@
   margin: 0 auto;
   padding: 0;
   background-color: $black-pearl;
-  padding-top: 70px;
+  padding-top: 67px;
+  padding-bottom: 139px;
+
+  @include vp-1023 {
+    padding-top: 55px;
+    padding-bottom: 75px;
+  }
+
+  @media (max-width: 769px) {
+    padding-top: 47px;
+    padding-bottom: 85px;
+  }
 }
 
 .products__title {
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 52px;
+
+  @media (max-width: 1248px) {
+    width: 670px;
+  }
+
+  @include vp-1023 {
+    margin-bottom: 38px;
+  }
+
+  @media (max-width: 769px) {
+    display: none;
+  }
+}
+
+.products__title h3 {
   margin: 0 auto;
   padding: 0;
   font-family: 'Roboto Condensed', 'Arial', sans-serif;
@@ -14,11 +43,6 @@
   font-size: 36px;
   line-height: 51px;
   color: $color-default-white;
-  margin-bottom: 50px;
-
-  @media (max-width: 769px) {
-    display: none;
-  }
 }
 
 .products__title-mobile {
@@ -26,17 +50,24 @@
 
   @media (max-width: 769px) {
     display: block;
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
-    font-family: 'Roboto Condensed', 'Arial', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 39px;
-    color: $color-default-white;
-    margin-bottom: 40px;
     width: 270px;
+    padding-left: 24px;
   }
+}
+
+.products__title-mobile h3 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 39px;
+  color: $color-default-white;
+  margin-bottom: 29px;
+  width: 200px;
 }
 
 .products__container {
@@ -60,14 +91,20 @@
   grid-template-columns: 1fr 1fr 1fr;
   gap: 85px;
 
+  @media (max-width: 1248px) {
+    width: 670px;
+  }
+
   @include vp-1023 {
     width: 670px;
     grid-template-columns: 1fr;
+    gap: 30px;
   }
 
   @media (max-width: 769px) {
     max-width: 320px;
-    justify-items: center
+    justify-items: center;
+    gap: 30px;
   }
 }
 
@@ -86,6 +123,12 @@
     bottom: 0;
     right: 0;
     cursor: pointer;
+
+    @media (max-width: 769px) {
+    width: 40px;
+    height: 40px;
+    }
+
   }
 
   @include vp-1023 {
@@ -109,10 +152,24 @@
   font-size: 20px;
   line-height: 30px;
   color: $color-default-white;
-  width: 200px;
+  width: 150px;
   position: absolute;
-  top: 50px;
+  top: 29px;
   left: 40px;
+
+  @include vp-1023 {
+    width: 140px;
+    top: 18px;
+    left: 45px;
+  }
+
+  @media (max-width: 769px) {
+    top: 8px;
+    left: 30px;
+    font-size: 18px;
+    line-height: 30px;
+    width: 130px;
+  }
 }
 
 .products__img img {
