@@ -5,6 +5,11 @@
   padding-top: 67px;
   padding-bottom: 139px;
 
+  @media (max-width: 1248px) {
+    padding-top: 55px;
+    padding-bottom: 75px;
+  }
+
   @include vp-1023 {
     padding-top: 55px;
     padding-bottom: 75px;
@@ -22,7 +27,7 @@
   margin-bottom: 52px;
 
   @media (max-width: 1248px) {
-    width: 670px;
+    margin-bottom: 38px;
   }
 
   @include vp-1023 {
@@ -74,6 +79,10 @@
   margin: 0 auto;
   width: 1220px;
 
+  @media (max-width: 1248px) {
+    width: 670px;
+  }
+
   @include vp-1023 {
     width: 670px;
   }
@@ -93,6 +102,8 @@
 
   @media (max-width: 1248px) {
     width: 670px;
+    grid-template-columns: 1fr;
+    gap: 30px;
   }
 
   @include vp-1023 {
@@ -131,6 +142,10 @@
 
   }
 
+  @media (max-width: 1248px) {
+    width: 670px;
+  }
+
   @include vp-1023 {
     width: 670px;
   }
@@ -156,6 +171,12 @@
   position: absolute;
   top: 29px;
   left: 40px;
+
+  @media (max-width: 1248px) {
+    width: 140px;
+    top: 18px;
+    left: 45px;
+  }
 
   @include vp-1023 {
     width: 140px;

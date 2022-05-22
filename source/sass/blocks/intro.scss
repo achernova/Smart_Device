@@ -8,16 +8,22 @@
   padding-bottom: 16px;
   margin-bottom: 120px;
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/head-backg@2x.jpg");
+  @media (min-width: 1024px) {
+    @include retina {
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/head-backg@2x.jpg");
+      }
+    }
   }
 
   @include vp-1023 {
     background-image: url("../img/head-backg-tablet.jpg");
     margin-bottom: 80px;
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/head-backg-tablet@2x.jpg");
+    @include retina {
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/head-backg-tablet@2x.jpg");
+      }
     }
   }
 
@@ -25,8 +31,10 @@
     background-image: url("../img/head-backg-mobile.jpg");
     margin-bottom: 50px;
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/head-backg-mobile@2x.jpg");
+    @include retina {
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/head-backg-mobile@2x.jpg");
+      }
     }
   }
 }
@@ -57,7 +65,6 @@
   }
 }
 
-
 .intro__container h1 {
   margin: 0;
   padding: 0;
@@ -70,7 +77,6 @@
   letter-spacing: 0.083em;
   text-transform: uppercase;
   margin-left: 125px;
-
 
   @include vp-1023 {
     font-size: 64px;

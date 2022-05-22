@@ -31,21 +31,29 @@
   align-items: flex-start;
 
   @media (max-width: 1248px) {
-    width: 670px;
+    width: 1024px;
   }
 
   @include vp-1023 {
     margin: 0 auto;
-    width: 670px;
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 41px;
   }
 
   @media (max-width: 769px) {
-    width: 270px;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 13px;
   }
 }
 
 .page-header__item--logo {
   margin-right: 159px;
+
+  @media (max-width: 1248px) {
+    margin-right: 180px;
+  }
 
   @include vp-1023 {
     padding-top: 7px;
@@ -60,14 +68,18 @@
 .page-header__item--email {
   margin-right: 121px;
 
+  @media (max-width: 1248px) {
+    margin-right: 20px;
+  }
+
   @include vp-1023 {
     margin: 0;
-    margin-left: 343px;
+    margin-left: auto;
     margin-right: 25px;
   }
 
   @media (max-width: 769px) {
-    margin-left: 136px;
+    margin-left: auto;
     margin-right: 0;
   }
 }
@@ -75,12 +87,16 @@
 .page-header__item--phone {
   margin-right: 164px;
 
+  @media (max-width: 1248px) {
+    margin-right: 50px;
+  }
+
   @include vp-1023 {
     margin-right: 0;
   }
 
   @media (max-width: 769px) {
-    margin-left: 21px;
+    margin-left: 25px;
   }
 }
 

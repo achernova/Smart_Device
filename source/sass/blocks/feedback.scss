@@ -9,6 +9,27 @@
   background-repeat: no-repeat;
   background-position-y: -75px;
 
+  @media (min-width: 1024px) {
+    @include retina {
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/form-backg@2x.png");
+      }
+    }
+  }
+
+  @media (max-width: 1248px) {
+    background-image: none;
+    background-color: $deep-sky-blue;
+    padding-top: 44px;
+    padding-bottom: 123px;
+
+    @include retina {
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: none;
+      }
+    }
+  }
+
   @include vp-1023 {
     background-image: none;
     background-color: $deep-sky-blue;
@@ -46,6 +67,10 @@
 .feedback__img {
   margin-right: 120px;
   margin-top: 127px;
+
+  @media (max-width: 1248px) {
+    display: none;
+  }
 
   @include vp-1023 {
     display: none;
@@ -85,7 +110,6 @@
   @media (max-width: 769px) {
     font-size: 30px;
     line-height: 42px;
-    margin: auto;
     margin-bottom: 7px;
   }
 }
@@ -106,7 +130,6 @@
     font-size: 14px;
     line-height: 19px;
     width: 270px;
-    margin: auto;
     margin-bottom: 31px;
   }
 }
@@ -140,7 +163,8 @@
   }
 }
 
-.feedback__form input,
+.feedback__form-container--name input,
+.feedback__form-container--phone input,
 .feedback__form textarea {
   background-color: $color-transparent-input;
   border: none;
@@ -271,7 +295,7 @@
   }
 }
 
-.feedback__form-container--checkbox input + label::after {
+.feedback__form-container--checkbox input:checked + label::after {
   position: absolute;
   content: '';
   width: 10px;

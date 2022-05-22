@@ -141,6 +141,8 @@
                       <!-- 270 540 -->
                       <source type="image/webp" media="(max-width: 769px)" srcset="img/card1-mobile.webp 1x, img/card1-mobile@2x.webp 2x">
                       <!-- 670 1340 -->
+                      <source type="image/webp" media="(max-width: 1248px)" srcset="img/card1-tablet.webp 1x, img/card1-tablet@2x.webp 2x">
+                      <!-- 670 1340 -->
                       <source type="image/webp" media="(max-width: 1024px)" srcset="img/card1-tablet.webp 1x, img/card1-tablet@2x.webp 2x">
                       <!-- 350 700 -->
                       <source type="image/webp" srcset="img/card1.webp 1x, img/card1@2x.webp 2x">
@@ -156,6 +158,8 @@
                       <!-- 270 540 -->
                       <source type="image/webp" media="(max-width: 769px)" srcset="img/card2-mobile.webp 1x, img/card2-mobile@2x.webp 2x">
                       <!-- 670 1340 -->
+                      <source type="image/webp" media="(max-width: 1248px)" srcset="img/card2-tablet.webp 1x, img/card2-tablet@2x.webp 2x">
+                      <!-- 670 1340 -->
                       <source type="image/webp" media="(max-width: 1023px)" srcset="img/card2-tablet.webp 1x, img/card2-tablet@2x.webp 2x">
                       <!-- 350 700 -->
                       <source type="image/webp" srcset="img/card2.webp 1x, img/card2@2x.webp 2x">
@@ -170,6 +174,8 @@
                     <picture class="products__img">
                       <!-- 270 540 -->
                       <source type="image/webp" media="(max-width: 769px)" srcset="img/card3-mobile.webp 1x, img/card3-mobile@2x.webp 2x">
+                       <!-- 670 1340 -->
+                       <source type="image/webp" media="(max-width: 1248px)" srcset="img/card3-tablet.webp 1x, img/card3-tablet@2x.webp 2x">
                       <!-- 670 1340 -->
                       <source type="image/webp" media="(max-width: 1023px)" srcset="img/card3-tablet.webp 1x, img/card3-tablet@2x.webp 2x">
                       <!-- 350 700 -->
@@ -204,12 +210,12 @@
                   </div>
                   <div class="feedback__form-container feedback__form-container--phone">
                     <label class="feedback__form-label feedback__form-label--phone visually-hidden" for="phone">Телефон:</label>
-                    <input type="tel" name="phone" id="phone" pattern="\+?[0-9\s\-\(\)]+" placeholder="Телефон" required>
+                    <input type="tel" name="phone" id="phone" placeholder="Телефон" required onkeydown="return phoneKeyDown(event)">
                   </div>
                 </div>
                 <div class="feedback__form-container feedback__form-container--textarea">
                   <label class="feedback__form-label feedback__form-label--textarea visually-hidden" for="textarea">textarea</label>
-                  <textarea name="textarea" id="textarea" placeholder="Ваш вопрос" required></textarea>
+                  <textarea name="textarea" id="textarea" placeholder="Ваш вопрос"></textarea>
                 </div>
                 <div class="feedback__form-wrap">
                   <button class="feedback__button" type="submit">Задать вопрос</button>
@@ -333,12 +339,12 @@
               </div>
               <div class="modal__form-container modal__form-container--phone">
                 <label class="modal__form-label modal__form-label--phone visually-hidden" for="phone">Телефон:</label>
-                <input type="tel" name="phone" id="phone" pattern="\+?[0-9\s\-\(\)]+" placeholder="Телефон" required>
+                <input type="tel" name="phone" id="modal-phone" pattern="\+?[0-9\s\-\(\)]+" onkeydown="return phoneKeyDown(event)" placeholder="Телефон" required>
               </div>
             </div>
             <div class="modal__form-container modal__form-container--textarea">
               <label class="modal__form-label modal__form-label--textarea visually-hidden" for="textarea">textarea</label>
-              <textarea name="textarea" id="textarea" placeholder="Ваш вопрос" required></textarea>
+              <textarea name="textarea" id="textarea" placeholder="Ваш вопрос"></textarea>
             </div>
             <div class="modal__form-wrap">
               <button class="modal__button" type="submit">Задать вопрос</button>

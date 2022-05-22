@@ -48,6 +48,10 @@
   justify-content: space-between;
   flex-wrap: wrap;
 
+  @media (max-width: 1248px) {
+    padding-top: 2px;
+  }
+
   @include vp-1023 {
     padding-top: 2px;
   }
@@ -64,6 +68,10 @@
   margin: 0;
   padding: 0;
   margin-bottom: 10px;
+
+  @media (max-width: 1248px) {
+    margin-bottom: 9px;
+  }
 
   @include vp-1023 {
     margin-bottom: 9px;

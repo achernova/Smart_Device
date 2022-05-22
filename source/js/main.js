@@ -3,7 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {getDetails} from './modules/description.js';
 import {getModal} from './modules/modal-window.js';
 import {getOpenMenu} from './modules/footer-menu.js';
-
+import {getMask} from './modules/phone-masck.js';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -16,6 +16,7 @@ window.addEventListener('DOMContentLoaded', () => {
   getDetails();
   getModal();
   getOpenMenu();
+  getMask();
   // Modules
   // ---------------------------------
 
