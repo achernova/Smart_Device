@@ -25,7 +25,7 @@
 
     &::before {
       position: absolute;
-      content: '';
+      content: "";
       width: 320px;
       height: 2px;
       background-color: $whisper;
@@ -39,7 +39,7 @@
 .footer-navigation h2 {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;

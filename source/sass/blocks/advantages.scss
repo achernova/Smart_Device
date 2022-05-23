@@ -66,7 +66,6 @@
 
 .advantages__item--confident,
 .advantages__item--price {
-
   @media (max-width: 769px) {
     min-height: 325px;
   }
@@ -113,7 +112,7 @@
 
 
 .advantages__item h2 {
-  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -155,7 +154,6 @@
 
 .advantages__item--confident h2,
 .advantages__item--price h2 {
-
   @media (max-width: 769px) {
     line-height: 26px;
     width: 200px;
@@ -170,24 +168,24 @@
 }
 
 .advantages__item:hover {
-
   @media screen and (min-width: $vp-1024) {
-      background-color: $deep-sky-blue;
-      border-color: $deep-sky-blue;
-      .advantages__icon {
-        display: none;
-      }
+    background-color: $deep-sky-blue;
+    border-color: $deep-sky-blue;
 
-      .advantages__icon__hover {
-        display: block;
-        margin: 0;
-        padding: 0;
-        margin-bottom: 20px;
-      }
+    .advantages__icon {
+      display: none;
+    }
 
-      h2,
-      p {
-        color: $alice-blue;
-      }
+    .advantages__icon__hover {
+      display: block;
+      margin: 0;
+      padding: 0;
+      margin-bottom: 20px;
+    }
+
+    h2,
+    p {
+      color: $alice-blue;
+    }
   }
 }

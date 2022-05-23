@@ -42,7 +42,7 @@
 .products__title h3 {
   margin: 0 auto;
   padding: 0;
-  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -65,7 +65,7 @@
 .products__title-mobile h3 {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 28px;
@@ -123,7 +123,7 @@
   position: relative;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 60px;
     height: 60px;
@@ -136,10 +136,9 @@
     cursor: pointer;
 
     @media (max-width: 769px) {
-    width: 40px;
-    height: 40px;
+      width: 40px;
+      height: 40px;
     }
-
   }
 
   @media (max-width: 1248px) {
@@ -161,7 +160,7 @@
 }
 
 .products__item p {
-  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;

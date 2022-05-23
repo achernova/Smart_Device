@@ -69,12 +69,12 @@
   margin: 0;
   padding: 0;
   padding-bottom: 34px;
-  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 80px;
   line-height: 94px;
-  letter-spacing: 0.083em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   margin-left: 125px;
 
@@ -119,7 +119,7 @@
 }
 
 .intro__link {
-  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
@@ -152,7 +152,7 @@
 
   @media (max-width: 769px) {
     display: block;
-    font-family: 'Roboto Condensed', 'Arial', sans-serif;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
     font-style: bold;
     font-weight: 700;
     font-size: 14px;
