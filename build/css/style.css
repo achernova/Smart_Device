@@ -693,7 +693,7 @@ button,
 .modal__wrapper h3 {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 51px;
@@ -749,8 +749,7 @@ button,
 .modal__button {
   margin: 0;
   padding: 0;
-  width: 265px;
-  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -783,7 +782,7 @@ button,
 
 .modal__form-container--checkbox input + label::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 18px;
   height: 18px;
   background-color: transparent;
@@ -794,7 +793,7 @@ button,
 
 .modal__form-container--checkbox input:checked + label::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 10px;
   height: 10px;
   background-image: url("../img/svg/tick.svg");
@@ -859,7 +858,7 @@ button,
 }*/
 
 .page-body {
-  font-family: 'PT Mono', 'Arial', monospace;
+  font-family: "PT Mono", "Arial", monospace;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -954,7 +953,7 @@ button,
 .page-header__button {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -965,7 +964,10 @@ button,
   background-color: transparent;
   border: 1px solid #f2f5f7;
   border-radius: 3px;
-  padding: 10px 15px;
+  padding-top: 10px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  padding-left: 15px;
   width: 160px;
   margin-top: 6px;
   cursor: pointer;
@@ -995,12 +997,12 @@ button,
   margin: 0;
   padding: 0;
   padding-bottom: 34px;
-  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 80px;
   line-height: 94px;
-  letter-spacing: 0.083em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   margin-left: 125px;
 }
@@ -1017,7 +1019,7 @@ button,
 }
 
 .intro__link {
-  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
@@ -1079,7 +1081,7 @@ button,
 }
 
 .advantages__item h2 {
-  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -1126,7 +1128,7 @@ button,
 }
 
 .description__paragraph h2 {
-  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -1151,7 +1153,7 @@ button,
 }
 
 .description__button {
-  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -1189,7 +1191,7 @@ button,
 .products__title h3 {
   margin: 0 auto;
   padding: 0;
-  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -1204,7 +1206,7 @@ button,
 .products__title-mobile h3 {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 28px;
@@ -1235,7 +1237,7 @@ button,
 }
 
 .products__item::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 60px;
   height: 60px;
@@ -1254,7 +1256,7 @@ button,
 }
 
 .products__item p {
-  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -1315,7 +1317,7 @@ button,
 .feedback__form-content h3 {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 51px;
@@ -1386,8 +1388,7 @@ button,
 .feedback__button {
   margin: 0;
   padding: 0;
-  width: 265px;
-  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -1419,7 +1420,7 @@ button,
 
 .feedback__form-container--checkbox input + label::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 15px;
   height: 15px;
   background-color: transparent;
@@ -1430,7 +1431,7 @@ button,
 
 .feedback__form-container--checkbox input:checked + label::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 10px;
   height: 10px;
   background-image: url("../img/svg/tick.svg");
@@ -1531,7 +1532,7 @@ button,
 .footer-navigation h2 {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -1583,7 +1584,7 @@ button,
 .footer-contacts h2 {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -2202,7 +2203,7 @@ button,
 
   .intro__link-mobile {
     display: block;
-    font-family: 'Roboto Condensed', 'Arial', sans-serif;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
     font-style: bold;
     font-weight: 700;
     font-size: 14px;
@@ -2523,7 +2524,7 @@ button,
 
   .footer-navigation::before {
     position: absolute;
-    content: '';
+    content: "";
     width: 320px;
     height: 2px;
     background-color: #e5e5e5;
@@ -2586,7 +2587,7 @@ button,
 
   .footer-contacts::before {
     position: absolute;
-    content: '';
+    content: "";
     width: 320px;
     height: 2px;
     background-color: #e5e5e5;
@@ -2614,7 +2615,7 @@ button,
 
   .footer-contacts__list::after {
     position: absolute;
-    content: '';
+    content: "";
     width: 318px;
     height: 2px;
     background-color: #e5e5e5;
