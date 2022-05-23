@@ -5,14 +5,15 @@
   padding-top: 120px;
   padding-bottom: 248px;
   position: relative;
-  background-image: url("../img/form-backg.png");
+  background-image: url("../img/form-backg.webp");
   background-repeat: no-repeat;
   background-position-y: -75px;
 
   @media (min-width: 1024px) {
     @include retina {
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/form-backg@2x.png");
+        background-image: url("../img/form-backg@2x.webp");
+        background-size: 978px 920px;
       }
     }
   }

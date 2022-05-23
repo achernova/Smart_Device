@@ -48,16 +48,15 @@
   text-transform: uppercase;
   color: $color-default-white;
   margin-bottom: 22px;
+
+  @media (max-width: 769px) {
+    margin-bottom: 20px;
+  }
 }
 
 .footer-navigation__list {
   margin: 0;
   padding: 0;
-  /*display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 470px;
-  height: 160px;*/
   width: 480px;
   columns: 220px 2;
 
@@ -81,6 +80,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     width: 220px;
+    position: relative;
   }
 }
 

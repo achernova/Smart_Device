@@ -10,7 +10,7 @@ const getDetails = () => {
       details.classList.add('is-invalid');
     }
     buttonDetails.textContent = buttonDetails.textContent === 'Подробнее' ? 'Свернуть' : 'Подробнее';
-  });
+  }, {passive: true});
 };
 
 export {getDetails};

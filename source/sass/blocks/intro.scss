@@ -11,7 +11,7 @@
   @media (min-width: 1024px) {
     @include retina {
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/head-backg@2x.jpg");
+        background-image: url("../img/head-backg@2x.webp");
       }
     }
   }
@@ -22,7 +22,7 @@
 
     @include retina {
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/head-backg-tablet@2x.jpg");
+        background-image: url("../img/head-backg-tablet@2x.webp");
       }
     }
   }
@@ -33,7 +33,7 @@
 
     @include retina {
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/head-backg-mobile@2x.jpg");
+        background-image: url("../img/head-backg-mobile@2x.webp");
       }
     }
   }
