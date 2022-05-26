@@ -2552,6 +2552,12 @@ button,
     position: relative;
   }
 
+  .is-active .footer-navigation__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
   .footer-navigation__item {
     width: 270px;
     font-size: 14px;
@@ -2622,6 +2628,12 @@ button,
     background-repeat: no-repeat;
     bottom: 0;
     left: -24px;
+  }
+
+  .is-active .footer-contacts__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 
   .footer-contacts__item {

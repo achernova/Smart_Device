@@ -14,7 +14,6 @@ window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
 
   getDetails();
-  getModal();
   getOpenMenu();
   getMask();
   // Modules
@@ -24,6 +23,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     // initModals();
+    getModal();
   }, {passive: true});
 });
 

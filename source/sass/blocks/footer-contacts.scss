@@ -74,6 +74,12 @@
   }
 }
 
+.is-active .footer-contacts__list {
+  @media (max-width: 769px) {
+    display: flex;
+  }
+}
+
 .footer-contacts__item {
   margin: 0;
   padding: 0;

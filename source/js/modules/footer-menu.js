@@ -4,10 +4,10 @@ const buttonCont = document.getElementById('toggle__contact-footer');
 const contactNav = document.getElementById('contact-footer');
 
 const getOpenMenu = () => {
-  if (window.matchMedia('(max-width: 769px)').matches) {
+  /* if (window.matchMedia('(max-width: 769px)').matches) {
     footerNav.style.display = 'none';
     contactNav.style.display = 'none';
-  }
+  }*/
 
   buttonNav.addEventListener('click', function () {
     if (footerNav.style.display === 'none') {

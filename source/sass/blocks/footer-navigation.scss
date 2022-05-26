@@ -84,6 +84,12 @@
   }
 }
 
+.is-active .footer-navigation__list {
+  @media (max-width: 769px) {
+    display: flex;
+  }
+}
+
 .footer-navigation__item {
   margin: 0;
   padding: 0;
