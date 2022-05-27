@@ -79,6 +79,7 @@ textarea {
 
   &::placeholder {
     opacity: 1;
+    color: $color-default-white;
   }
 
   &:invalid {

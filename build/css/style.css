@@ -479,26 +479,31 @@ textarea {
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   opacity: 1;
+  color: #ffffff;
 }
 
 input::-moz-placeholder,
 textarea::-moz-placeholder {
   opacity: 1;
+  color: #ffffff;
 }
 
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
   opacity: 1;
+  color: #ffffff;
 }
 
 input::-ms-input-placeholder,
 textarea::-ms-input-placeholder {
   opacity: 1;
+  color: #ffffff;
 }
 
 input::placeholder,
 textarea::placeholder {
   opacity: 1;
+  color: #ffffff;
 }
 
 input:invalid,
@@ -1572,12 +1577,12 @@ button,
   right: -6px;
   width: 30px;
   height: 30px;
+  font-size: 25px;
   background-color: transparent;
   cursor: pointer;
   border: none;
   position: relative;
   color: #ffffff;
-  font-size: 25px;
   display: none;
 }
 
@@ -2538,7 +2543,6 @@ button,
   }
 
   .footer-navigation__list {
-    display: none;
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
@@ -2550,12 +2554,6 @@ button,
     flex-wrap: wrap;
     width: 220px;
     position: relative;
-  }
-
-  .is-active .footer-navigation__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
   }
 
   .footer-navigation__item {
@@ -2572,6 +2570,22 @@ button,
 
   .footer-navigation__toggle {
     display: block;
+  }
+
+  .is-closed .footer-navigation__list {
+    display: none;
+  }
+
+  .is-opened .footer-navigation__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .is-active .footer-navigation__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 
   .footer-contacts {
@@ -2607,7 +2621,6 @@ button,
   }
 
   .footer-contacts__list {
-    display: none;
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
@@ -2630,12 +2643,6 @@ button,
     left: -24px;
   }
 
-  .is-active .footer-contacts__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-
   .footer-contacts__item {
     width: 270px;
     font-size: 14px;
@@ -2654,6 +2661,22 @@ button,
 
   .footer-contacts__toggle {
     display: block;
+  }
+
+  .is-closed .footer-contacts__list {
+    display: none;
+  }
+
+  .is-opened .footer-contacts__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .is-active .footer-contacts__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
