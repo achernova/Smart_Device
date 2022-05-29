@@ -565,6 +565,13 @@ button,
   appearance: none;
 }
 
+button {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 .wrapper {
   position: relative;
   display: -webkit-box;
@@ -675,7 +682,7 @@ button,
   top: 0;
   /*transform: translate(-50%, -50%);*/
   background-color: rgba(3, 16, 27, 0.7);
-  padding-top: 120px;
+  padding-top: 146px;
 }
 
 .modal__wrapper {
@@ -685,6 +692,7 @@ button,
   z-index: 10;
   margin: 0 auto;
   padding-bottom: 40px;
+  padding-top: 8px;
 }
 
 .is-invalid .modal {
@@ -702,10 +710,12 @@ button,
   font-weight: 400;
   font-size: 36px;
   line-height: 51px;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   color: #ffffff;
   width: 380px;
   margin-left: 40px;
+  font-size: 30px;
+  line-height: 42px;
 }
 
 .modal__wrapper p {
@@ -717,6 +727,8 @@ button,
   color: #ffffff;
   width: 380px;
   margin-left: 40px;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .modal__form {
@@ -725,7 +737,7 @@ button,
 }
 
 .modal__form-container {
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 }
 
 .modal input,
@@ -748,7 +760,7 @@ button,
 .modal__form-container textarea {
   height: 155px;
   padding-left: 15px;
-  padding-top: 15px;
+  padding-top: 23px;
 }
 
 .modal__button {
@@ -763,8 +775,8 @@ button,
   text-transform: uppercase;
   color: #ffffff;
   background-color: #041827;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 14px;
+  padding-bottom: 12px;
   margin-right: 80px;
   margin-bottom: 20px;
   border: none;
@@ -873,7 +885,6 @@ button,
 }
 
 .page-header {
-  position: fixed;
   top: 0;
   z-index: 100;
   margin: 0 auto;
@@ -1037,6 +1048,10 @@ button,
   padding: 16px 30px;
   cursor: pointer;
   margin-left: 125px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .intro__link-mobile {
@@ -1670,6 +1685,12 @@ button,
   }
 }
 
+@media (min-width: 1024px) {
+  .page-header {
+    position: fixed;
+  }
+}
+
 @media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1024px) and (-o-min-device-pixel-ratio: 3/2) and (-o-min-device-pixel-ratio: 3/2), (min-width: 1024px) and (min-resolution: 144dpi) and (min-resolution: 144dpi), (min-width: 1024px) and (min-resolution: 1.5dppx) and (min-resolution: 144dpi), (min-width: 1024px) and (min-resolution: 144dpi) and (min-resolution: 1.5dppx), (min-width: 1024px) and (min-resolution: 1.5dppx) and (min-resolution: 1.5dppx) {
   .intro {
     background-image: url("../img/head-backg@2x.webp");
@@ -1755,18 +1776,18 @@ button,
   }
 
   .products__container {
-    width: 670px;
+    width: 1000px;
   }
 
   .products__list {
-    width: 670px;
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-    gap: 30px;
+    width: 1000px;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
   }
 
   .products__item {
-    width: 670px;
+    width: 320px;
   }
 
   .products__item p {
@@ -1854,6 +1875,7 @@ button,
   }
 
   .page-header {
+    position: absolute;
     min-height: 100px;
     padding-top: 13px;
   }

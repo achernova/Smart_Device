@@ -11,7 +11,7 @@
     <link rel="preload" href="fonts/roboto-bold-condensed.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
-  <body class="page-body">
+  <body class="page-body" id="body">
     <div class="wrapper">
       <header class="page-header">
         <div class="container">
@@ -117,7 +117,7 @@
             </picture>
             <div class="description__paragraph">
               <h2>О компании</h2>
-              <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.
+              <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с&nbsp;1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.
               </p>
               <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.<span>Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</span></p>
               <div class="description__details is-invalid" data-element="details">
@@ -144,7 +144,7 @@
                       <!-- 270 540 -->
                       <source type="image/webp" media="(max-width: 769px)" srcset="img/card1-mobile.webp 1x, img/card1-mobile@2x.webp 2x">
                       <!-- 670 1340 -->
-                      <source type="image/webp" media="(max-width: 1248px)" srcset="img/card1-tablet.webp 1x, img/card1-tablet@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1248px)" srcset="img/card1.webp 1x, img/card1@2x.webp 2x">
                       <!-- 670 1340 -->
                       <source type="image/webp" media="(max-width: 1024px)" srcset="img/card1-tablet.webp 1x, img/card1-tablet@2x.webp 2x">
                       <!-- 350 700 -->
@@ -161,7 +161,7 @@
                       <!-- 270 540 -->
                       <source type="image/webp" media="(max-width: 769px)" srcset="img/card2-mobile.webp 1x, img/card2-mobile@2x.webp 2x">
                       <!-- 670 1340 -->
-                      <source type="image/webp" media="(max-width: 1248px)" srcset="img/card2-tablet.webp 1x, img/card2-tablet@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1248px)" srcset="img/card2.webp 1x, img/card2@2x.webp 2x">
                       <!-- 670 1340 -->
                       <source type="image/webp" media="(max-width: 1023px)" srcset="img/card2-tablet.webp 1x, img/card2-tablet@2x.webp 2x">
                       <!-- 350 700 -->
@@ -178,7 +178,7 @@
                       <!-- 270 540 -->
                       <source type="image/webp" media="(max-width: 769px)" srcset="img/card3-mobile.webp 1x, img/card3-mobile@2x.webp 2x">
                       <!-- 670 1340 -->
-                      <source type="image/webp" media="(max-width: 1248px)" srcset="img/card3-tablet.webp 1x, img/card3-tablet@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1248px)" srcset="img/card3.webp 1x, img/card3@2x.webp 2x">
                       <!-- 670 1340 -->
                       <source type="image/webp" media="(max-width: 1023px)" srcset="img/card3-tablet.webp 1x, img/card3-tablet@2x.webp 2x">
                       <!-- 350 700 -->
@@ -213,7 +213,7 @@
                   </div>
                   <div class="feedback__form-container feedback__form-container--phone">
                     <label class="feedback__form-label feedback__form-label--phone visually-hidden" for="phone">Телефон:</label>
-                    <input type="tel" name="phone" id="phone" placeholder="Телефон" required onkeydown="return phoneKeyDown(event)">
+                    <input type="tel" name="phone" id="phone" placeholder="Телефон" onkeydown="return phoneKeyDown(event)" required>
                   </div>
                 </div>
                 <div class="feedback__form-container feedback__form-container--textarea">
@@ -328,9 +328,9 @@
     </div>
 
     <!-- Модалки -->
-    <div class="modal is-invalid" data-element="feedback">
+    <div class="modal is-invalid" data-element="feedback" tabindex="0">
 
-      <div class="modal__wrapper">
+      <div class="modal__wrapper" data-element="wrapper">
         <div class="modal__overlay" id="modal-overlay"></div>
           <button class="modal__close" data-element="button-close">
             <span class="visually-hidden">Закрой меня</span>
@@ -353,7 +353,7 @@
               <textarea name="modal-textarea" id="modal-textarea" placeholder="Ваш вопрос"></textarea>
             </div>
             <div class="modal__form-wrap">
-              <button class="modal__button" type="submit">Задать вопрос</button>
+              <button class="modal__button" type="submit">Отправить</button>
               <div class="modal__form-container modal__form-container--checkbox">
                 <input type="checkbox" name="modal-checkbox" id="modal-checkbox" required checked class="visually-hidden">
                 <label class="modal__form-label modal__form-label--checkbox" for="modal-checkbox">Я согласен на обработку персональных данных</label>
