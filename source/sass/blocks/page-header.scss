@@ -8,7 +8,7 @@
   padding-top: 30px;
   background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
 
-  @media(min-width: 1024px) {
+  @media (min-width: 1024px) {
     position: fixed;
   }
 
@@ -231,7 +231,7 @@
     @media screen and (min-width: $vp-1024) {
       border: none;
       outline: 2px solid $deep-sky-blue;
-      color:$deep-sky-blue;
+      color: $deep-sky-blue;
     }
   }
 }

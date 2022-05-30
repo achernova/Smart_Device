@@ -566,6 +566,10 @@ button,
 }
 
 button {
+  /*--webkit-user-select: none;
+	--khtml-user-select: none;
+	--moz-user-select: none;
+	--ms-user-select: none;*/
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -707,14 +711,12 @@ button {
   padding: 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
-  font-size: 36px;
-  line-height: 51px;
+  font-size: 30px;
+  line-height: 42px;
   margin-bottom: 5px;
   color: #ffffff;
   width: 380px;
   margin-left: 40px;
-  font-size: 30px;
-  line-height: 42px;
 }
 
 .modal__wrapper p {
@@ -726,8 +728,6 @@ button {
   color: #ffffff;
   width: 380px;
   margin-left: 40px;
-  font-size: 16px;
-  line-height: 22px;
 }
 
 .modal__form {
@@ -1085,6 +1085,10 @@ button {
   padding: 16px 30px;
   cursor: pointer;
   margin-left: 125px;
+  /* --webkit-user-select: none;
+	--khtml-user-select: none;
+  --moz-user-select: none;
+	--ms-user-select: none;*/
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
