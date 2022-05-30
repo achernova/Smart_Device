@@ -246,6 +246,12 @@
     padding-top: 14px;
     padding-bottom: 14px;
   }
+
+  &:hover {
+    @media screen and (min-width: $vp-1024) {
+      color: $deep-sky-blue;
+    }
+  }
 }
 
 .feedback__form-container--checkbox {
@@ -275,6 +281,16 @@
   @media (max-width: 769px) {
     margin-left: 31px;
   }
+
+  &:hover {
+    @media screen and (min-width: $vp-1024) {
+      color: $black-pearl;
+    }
+  }
+}
+
+.feedback__form-container--checkbox input:focus-within + label::before {
+  outline: 2px solid $black-pearl;
 }
 
 .feedback__form-container--checkbox input + label::before {
@@ -286,6 +302,8 @@
   border: 1px solid $color-default-white;
   top: 8px;
   left: -25px;
+  cursor: pointer;
+
 
   @media (max-width: 769px) {
     width: 13px;
@@ -304,6 +322,7 @@
   background-repeat: no-repeat;
   top: 12px;
   left: -21px;
+  cursor: pointer;
 
   @media (max-width: 769px) {
     top: 11px;

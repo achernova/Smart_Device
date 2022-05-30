@@ -28,23 +28,73 @@
   @include vp-1023 {
     justify-content: space-between;
     flex-direction: column;
-    width: 670px;
+    width: 675px;
   }
 
   @media (max-width: 769px) {
-    max-width: 320px;
+    max-width: 100%;
     align-items: center;
   }
 }
 
-.page-footer__link {
-  margin-bottom: 30px;
-  cursor: pointer;
+
+.page-footer__link-logo {
+  margin-bottom: 26px;
+
+  @media (max-width: 769px) {
+    padding-left: 23px;
+    margin-bottom: 4px;
+  }
+}
+
+.page-footer__social-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 14px;
+  width: 158px;
+  flex-wrap: wrap;
+
+  @include vp-1023 {
+    padding-top: 6px;
+    width: 150px;
+  }
 
   @media (max-width: 769px) {
     margin: 0 auto;
-    width: 270px;
+    width: 150px;
+  }
+}
+
+.page-footer__link {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  margin-right: 11px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  @include vp-1023 {
+    margin-bottom: 30px;
+    margin-right: 0;
+    text-align: right;
+  }
+
+  @media (max-width: 769px) {
+    margin: 0 auto;
     margin-bottom: 15px;
+    text-align: center;
+  }
+
+  &:hover {
+    @media screen and (min-width: $vp-1024) {
+      border-bottom: 3px solid $alice-blue;
+    }
   }
 }
 
@@ -65,6 +115,7 @@
     margin-right: 0;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 5px;
   }
 
   @media (max-width: 769px) {
@@ -74,35 +125,6 @@
   }
 }
 
-.page-footer__link-logo {
-  margin-bottom: 29px;
-
-  @media (max-width: 769px) {
-    padding-left: 23px;
-    margin-bottom: 4px;
-  }
-}
-
-.page-footer__social-list {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-left: 14px;
-  width: 140px;
-  flex-wrap: wrap;
-
-  @include vp-1023 {
-    padding-top: 10px;
-  }
-
-  @media (max-width: 769px) {
-    margin: 0 auto;
-    margin-bottom: 22px;
-    width: 140px;
-  }
-}
 
 .page-footer__container {
   margin: 0;
@@ -118,5 +140,6 @@
 
   @media (max-width: 769px) {
     flex-direction: column;
+    width: 100%;
   }
 }

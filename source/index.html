@@ -17,7 +17,7 @@
         <div class="container">
           <div class="page-header__menu">
             <div class="page-header__item page-header__item--logo">
-              <a class="page-header__link" tabindex="1">
+              <a class="page-header__link" tabindex="9">
                 <span class="visually-hidden">Логотип Smart Device</span>
                 <svg class="page-header__logo" width="215" height="55">
                   <use xlink:href="img/sprite.svg#logo"></use>
@@ -27,25 +27,24 @@
                 </svg>
               </a>
             </div>
-            <div class="page-header__item page-header__item--email">
-              <a href="#" class="page-header__link-icon" tabindex="2">
-                <span class="visually-hidden">Почта</span>
-                <svg width="21" height="20">
-                  <use xlink:href="img/sprite.svg#icon-email"></use>
-                </svg>
-              </a>
-              <a href="mailto:info@sd.ru" class="page-header__link" tabindex="3">info@sd.ru</a>
+            <div class="page-header__contacts">
+              <div class="page-header__contacts page-header__contacts--email">
+                <a href="mailto:info@sd.ru" class="page-header__link" tabindex="11">
+                  <svg width="21" height="20">
+                    <use xlink:href="img/sprite.svg#icon-email"></use>
+                  </svg>
+                  <span>info@sd.ru</span></a>
+              </div>
+              <div class="page-header__contacts page-header__contacts--phone">
+                <a href="tel:+74950005252" class="page-header__link" tabindex="13">
+                  <svg width="21" height="20">
+                    <use xlink:href="img/sprite.svg#icon-phone"></use>
+                  </svg>
+                  <span>+7 (495) 000 52 52</span></a>
+              </div>
+
             </div>
-            <div class="page-header__item page-header__item--phone">
-              <a href="#" class="page-header__link-icon" tabindex="4">
-                <span class="visually-hidden">Телефон</span>
-                <svg width="21" height="20">
-                  <use xlink:href="img/sprite.svg#icon-phone"></use>
-                </svg>
-              </a>
-              <a href="tel:+74950005252" class="page-header__link" tabindex="5">+7 (495) 000 52 52</a>
-            </div>
-            <button class="page-header__button" type="button" data-element="call" tabindex="6">Заказать звонок</button>
+            <button class="page-header__button" type="button" data-element="call" tabindex="14">Заказать звонок</button>
           </div>
         </div>
       </header>
@@ -56,14 +55,14 @@
           <div class="intro__container">
             <h1>Печатные платы</h1>
             <p>производство и монтаж, поставка комплектующих, блоков&nbsp;и&nbsp;модулей</p>
-            <a href="#feedback" class="intro__link" tabindex="7">Получить бесплатную консультацию</a>
-            <a href="#feedback" class="intro__link-mobile" tabindex="7">Бесплатная консультация</a>
+            <a href="#feedback" class="intro__link" tabindex="15">Получить бесплатную консультацию</a>
+            <a href="#feedback" class="intro__link-mobile" tabindex="15">Бесплатная консультация</a>
           </div>
         </section>
 
         <section class="advantages">
           <ul class="advantages__list">
-            <li class="advantages__item advantages__item--time" tabindex="8" data-element="advantage-card">
+            <li class="advantages__item advantages__item--time" tabindex="16" data-element="advantage-card">
               <svg class="advantages__icon" width="35" height="35">
                 <use xlink:href="img/sprite.svg#clock"></use>
               </svg>
@@ -71,9 +70,9 @@
                 <use xlink:href="img/sprite.svg#clock1"></use>
               </svg>
               <h2>Оперативные сроки</h2>
-              <p>Усовершенствованная логистическая система позволяет нам просчитывать&nbsp;стоимость, производить и&nbsp;доставлять заказы плат и комплектующих&nbsp;в самые короткие сроки</p>
+              <p>Усовершенствованная логистическая система позволяет нам просчитывать&nbsp;стоимость, производить и&nbsp;доставлять заказы плат и комплектующих&nbsp;в самые короткие сроки.</p>
             </li>
-            <li class="advantages__item advantages__item--sails" tabindex="9">
+            <li class="advantages__item advantages__item--sails" tabindex="17">
               <svg class="advantages__icon" width="35" height="35">
                 <use xlink:href="img/sprite.svg#provider"></use>
               </svg>
@@ -84,7 +83,7 @@
               <p>Нашими поставщиками являются&nbsp;такие крупные мировые компании как: OSRAM,&nbsp;CREE, HOLGLITRONIC,&nbsp;REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.
               </p>
             </li>
-            <li class="advantages__item advantages__item--confident" tabindex="10">
+            <li class="advantages__item advantages__item--confident" tabindex="18">
               <svg class="advantages__icon" width="35" height="35">
                 <use xlink:href="img/sprite.svg#confident"></use>
               </svg>
@@ -94,7 +93,7 @@
               <h2>Полная конфиденциальность</h2>
               <p>По желанию клиента  мы обеспечиваем полную конфеденциальность.</p>
             </li>
-            <li class="advantages__item advantages__item--price" tabindex="11">
+            <li class="advantages__item advantages__item--price" tabindex="19">
               <svg class="advantages__icon" width="35" height="35">
                 <use xlink:href="img/sprite.svg#tag"></use>
               </svg>
@@ -123,7 +122,7 @@
               <div class="description__details is-invalid" data-element="details">
                 <p><span>Среди наших клиентов крупнейшие Производители светотехники России.</span><br>Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых продолжают сотрудничество по сей день. На данный момент насчитывается более 14 офисов по всей стране и 20 городов присутствия.<br>Мы стремимся к постоянному развитию и повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и время наших клиентов</p>
               </div>
-              <button class="description__button" type="button" data-element="button-details">Подробнее</button>
+              <button class="description__button" type="button" data-element="button-details" tabindex="20">Подробнее</button>
             </div>
           </div>
         </section>
@@ -139,14 +138,16 @@
               </div>
               <ul class="products__list">
                 <li class="products__item">
-                  <a href="#" class="products__link">
+                  <a href="#" class="products__link" tabindex="21">
                     <picture class="products__img">
                       <!-- 270 540 -->
-                      <source type="image/webp" media="(max-width: 769px)" srcset="img/card1-mobile.webp 1x, img/card1-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 450px)" srcset="img/card1-mobile.webp 1x, img/card1-mobile@2x.webp 2x">
                       <!-- 670 1340 -->
-                      <source type="image/webp" media="(max-width: 1248px)" srcset="img/card1.webp 1x, img/card1@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 769px)"  srcset="img/card1-tablet.webp 1x, img/card1-tablet@2x.webp 2x">
                       <!-- 670 1340 -->
                       <source type="image/webp" media="(max-width: 1024px)" srcset="img/card1-tablet.webp 1x, img/card1-tablet@2x.webp 2x">
+                      <!-- 670 1340 -->
+                      <source type="image/webp" media="(max-width: 1248px)" srcset="img/card1.webp 1x, img/card1@2x.webp 2x">
                       <!-- 350 700 -->
                       <source type="image/webp" srcset="img/card1.webp 1x, img/card1@2x.webp 2x">
                       <!-- 350 700 -->
@@ -156,14 +157,16 @@
                     </a>
                 </li>
                 <li class="products__item">
-                    <a href="#" class="products__link">
+                    <a href="#" class="products__link" tabindex="22">
                     <picture class="products__img">
                       <!-- 270 540 -->
-                      <source type="image/webp" media="(max-width: 769px)" srcset="img/card2-mobile.webp 1x, img/card2-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 450px)" srcset="img/card2-mobile.webp 1x, img/card2-mobile@2x.webp 2x">
                       <!-- 670 1340 -->
-                      <source type="image/webp" media="(max-width: 1248px)" srcset="img/card2.webp 1x, img/card2@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 769px)" srcset="img/card2-tablet.webp 1x, img/card2-tablet@2x.webp 2x">
                       <!-- 670 1340 -->
                       <source type="image/webp" media="(max-width: 1023px)" srcset="img/card2-tablet.webp 1x, img/card2-tablet@2x.webp 2x">
+                      <!-- 670 1340 -->
+                      <source type="image/webp" media="(max-width: 1248px)" srcset="img/card2.webp 1x, img/card2@2x.webp 2x">
                       <!-- 350 700 -->
                       <source type="image/webp" srcset="img/card2.webp 1x, img/card2@2x.webp 2x">
                       <!-- 350 700 -->
@@ -173,14 +176,16 @@
                   </a>
                 </li>
                 <li class="products__item">
-                  <a href="#" class="products__link">
+                  <a href="#" class="products__link" tabindex="23">
                     <picture class="products__img">
                       <!-- 270 540 -->
-                      <source type="image/webp" media="(max-width: 769px)" srcset="img/card3-mobile.webp 1x, img/card3-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 450px)" srcset="img/card3-mobile.webp 1x, img/card3-mobile@2x.webp 2x">
                       <!-- 670 1340 -->
-                      <source type="image/webp" media="(max-width: 1248px)" srcset="img/card3.webp 1x, img/card3@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 769px)" srcset="img/card3-tablet.webp 1x, img/card3-tablet@2x.webp 2x">
                       <!-- 670 1340 -->
                       <source type="image/webp" media="(max-width: 1023px)" srcset="img/card3-tablet.webp 1x, img/card3-tablet@2x.webp 2x">
+                      <!-- 670 1340 -->
+                      <source type="image/webp" media="(max-width: 1248px)" srcset="img/card3.webp 1x, img/card3@2x.webp 2x">
                       <!-- 350 700 -->
                       <source type="image/webp" srcset="img/card3.webp 1x, img/card3@2x.webp 2x">
                       <!-- 350 700 -->
@@ -209,21 +214,21 @@
                 <div class="feedback__form-data">
                   <div class="feedback__form-container feedback__form-container--name">
                     <label class="feedback__form-label feedback__form-label--name visually-hidden" for="name">Имя</label>
-                    <input type="text" name="name" id="name" placeholder="Имя" required>
+                    <input type="text" name="name" id="name" placeholder="Имя" required tabindex="24">
                   </div>
                   <div class="feedback__form-container feedback__form-container--phone">
                     <label class="feedback__form-label feedback__form-label--phone visually-hidden" for="phone">Телефон:</label>
-                    <input type="tel" name="phone" id="phone" placeholder="Телефон" onkeydown="return phoneKeyDown(event)" required>
+                    <input type="tel" name="phone" id="phone" placeholder="Телефон" onkeydown="return phoneKeyDown(event)" required tabindex="25">
                   </div>
                 </div>
                 <div class="feedback__form-container feedback__form-container--textarea">
                   <label class="feedback__form-label feedback__form-label--textarea visually-hidden" for="textarea">textarea</label>
-                  <textarea name="textarea" id="textarea" placeholder="Ваш вопрос"></textarea>
+                  <textarea name="textarea" id="textarea" placeholder="Ваш вопрос" tabindex="26"></textarea>
                 </div>
                 <div class="feedback__form-wrap">
-                  <button class="feedback__button" type="submit">Задать вопрос</button>
+                  <button class="feedback__button" type="submit" tabindex="28">Задать вопрос</button>
                   <div class="feedback__form-container feedback__form-container--checkbox">
-                    <input type="checkbox" name="checkbox" id="checkbox" required checked class="visually-hidden">
+                    <input type="checkbox" name="checkbox" id="checkbox" required checked class="visually-hidden" tabindex="27">
                     <label class="feedback__form-label feedback__form-label--checkbox" for="checkbox">Я согласен на обработку персональных данных</label>
                   </div>
                 </div>
@@ -277,8 +282,10 @@
           <div class="page-footer__container">
 
             <nav class="footer-navigation is-closed is-active" id="nav-footer">
-              <h2>Разделы сайта</h2>
-              <button class="footer-navigation__toggle" type="button" id="toggle__nav-footer">+</button>
+              <div class="footer-navigation__button" id="button__nav-footer">
+                <h2>Разделы сайта</h2>
+                <button class="footer-navigation__toggle" type="button" id="toggle__nav-footer">+</button>
+              </div>
               <ul class="footer-navigation__list">
                 <li class="footer-navigation__item">
                   <a href="#" class="footer-navigation__link">О компании</a>
@@ -305,8 +312,10 @@
             </nav>
 
             <div class="footer-contacts is-closed is-active" id="contact-footer">
-              <h2>Наш офис</h2>
-              <button class="footer-contacts__toggle" type="button" id="toggle__contact-footer">+</button>
+              <div class="footer-contacts__button" id="button__contact-footer">
+                <h2>Наш офис</h2>
+                <button class="footer-contacts__toggle" type="button" id="toggle__contact-footer">+</button>
+              </div>
               <ul class="footer-contacts__list is-active">
                 <li class="footer-contacts__item">
                   <p>г. Мытищи, Олимпийский проспект, д.10</p>
@@ -328,38 +337,38 @@
     </div>
 
     <!-- Модалки -->
-    <div class="modal is-invalid" data-element="feedback" tabindex="0">
-
+    <div class="modal is-invalid" data-element="feedback">
       <div class="modal__wrapper" data-element="wrapper">
         <div class="modal__overlay" id="modal-overlay"></div>
-          <button class="modal__close" data-element="button-close">
-            <span class="visually-hidden">Закрой меня</span>
-          </button>
-          <h3>Закажите звонок</h3>
-          <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-          <form class="modal__form" action="https://echo.htmlacademy.ru" method="POST">
-            <div class="modal__form-wrap">
-              <div class="modal__form-container modal__form-container--name">
-                <label class="modal__form-label modal__form-label--name visually-hidden" for="modal-name">Имя</label>
-                <input type="text" name="modal-name" id="modal-name" placeholder="Имя" required>
-              </div>
-              <div class="modal__form-container modal__form-container--phone">
-                <label class="modal__form-label modal__form-label--phone visually-hidden" for="modal-phone">Телефон:</label>
-                <input type="tel" name="modal-phone" id="modal-phone" pattern="\+?[0-9\s\-\(\)]+" onkeydown="return phoneKeyDown(event)" placeholder="Телефон" required>
-              </div>
+        <button class="modal__close" id="button-close" tabindex="7">
+          <span class="visually-hidden">Закрой меня</span>
+        </button>
+        <h3>Закажите звонок</h3>
+        <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+        <form class="modal__form" action="https://echo.htmlacademy.ru" method="POST">
+          <div class="modal__form-wrap">
+            <div class="modal__form-container modal__form-container--name">
+              <label class="modal__form-label modal__form-label--name visually-hidden" for="modal-name">Имя</label>
+              <input type="text" name="modal-name" id="modal-name" placeholder="Имя" required tabindex="2">
             </div>
-            <div class="modal__form-container modal__form-container--textarea">
-              <label class="modal__form-label modal__form-label--textarea visually-hidden" for="textarea">textarea</label>
-              <textarea name="modal-textarea" id="modal-textarea" placeholder="Ваш вопрос"></textarea>
+            <div class="modal__form-container modal__form-container--phone">
+              <label class="modal__form-label modal__form-label--phone visually-hidden" for="modal-phone">Телефон:</label>
+              <input type="tel" name="modal-phone" id="modal-phone" pattern="\+?[0-9\s\-\(\)]+" onkeydown="return phoneKeyDown(event)" placeholder="Телефон" required tabindex="3">
             </div>
-            <div class="modal__form-wrap">
-              <button class="modal__button" type="submit">Отправить</button>
-              <div class="modal__form-container modal__form-container--checkbox">
-                <input type="checkbox" name="modal-checkbox" id="modal-checkbox" required checked class="visually-hidden">
-                <label class="modal__form-label modal__form-label--checkbox" for="modal-checkbox">Я согласен на обработку персональных данных</label>
-              </div>
+          </div>
+          <div class="modal__form-container modal__form-container--textarea">
+            <label class="modal__form-label modal__form-label--textarea visually-hidden" for="textarea">textarea</label>
+            <textarea name="modal-textarea" id="modal-textarea" placeholder="Ваш вопрос" tabindex="4"></textarea>
+          </div>
+          <div class="modal__form-wrap">
+            <button class="modal__button" type="submit" tabindex="6">Отправить</button>
+            <div class="modal__form-container modal__form-container--checkbox">
+              <input type="checkbox" name="modal-checkbox" id="modal-checkbox" required checked class="visually-hidden" tabindex="5">
+              <label class="modal__form-label modal__form-label--checkbox" for="modal-checkbox">Я согласен на обработку персональных данных</label>
             </div>
-          </form>
+          </div>
+        </form>
+        <span tabindex="8" class="spanTab"></span>
       </div>
     </div>
 

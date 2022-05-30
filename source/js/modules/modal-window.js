@@ -1,12 +1,18 @@
 const feedbackModal = document.querySelector('[data-element="feedback"]');
 const phoneButton = document.querySelector('[data-element="call"]');
-const closeButton = document.querySelector('[data-element="button-close"]');
+const closeButton = document.getElementById('button-close');
 const modalOverlay = document.getElementById('modal-overlay');
 const modalFocus = document.getElementById('modal-name');
 const scrollBody = document.getElementById('body');
+const spanTab = document.querySelector('.spanTab');
+
 
 const getModal = () => {
-  feedbackModal.focus();
+
+  spanTab.onfocus = function () {
+    modalFocus.focus();
+  };
+
   phoneButton.addEventListener('click', function () {
     if (feedbackModal.classList.contains('is-invalid')) {
       feedbackModal.classList.remove('is-invalid');

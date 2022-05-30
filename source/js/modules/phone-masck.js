@@ -18,8 +18,12 @@ const getMask = () => {
 
   phoneInput.onkeyup = function (evt) {
     const el = evt.target;
-    if (el.value.length === 6 && evt.key !== 'Backspace') {
-      el.value += ')';
+
+    if (el.value.length <= 3) {
+      el.value = '+7(';
+    }
+    if (el.value.length >= 6 && evt.key !== 'Backspace' && el.value[6] !== ')') {
+      el.value = el.value.slice(0, 6) + ')' + el.value.slice(6, el.value.length - 1);
     }
     return true;
   };
@@ -31,7 +35,7 @@ const getMask = () => {
     }
   };
 
-  phoneInput.onfocusout = function (evt) {
+  phoneInput.onblur = function (evt) {
     const el = evt.target;
     if (el.value === '+7(') {
       el.value = '';
@@ -55,8 +59,11 @@ const getMask = () => {
 
   modalPhoneInput.onkeyup = function (evt) {
     const el = evt.target;
-    if (el.value.length === 6 && evt.key !== 'Backspace') {
-      el.value += ')';
+    if (el.value.length <= 3) {
+      el.value = '+7(';
+    }
+    if (el.value.length >= 6 && evt.key !== 'Backspace' && el.value[6] !== ')') {
+      el.value = el.value.slice(0, 6) + ')' + el.value.slice(6, el.value.length - 1);
     }
     return true;
   };
@@ -68,7 +75,7 @@ const getMask = () => {
     }
   };
 
-  modalPhoneInput.onfocusout = function (evt) {
+  modalPhoneInput.onblur = function (evt) {
     const el = evt.target;
     if (el.value === '+7(') {
       el.value = '';

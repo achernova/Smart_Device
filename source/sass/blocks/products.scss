@@ -113,7 +113,9 @@
   }
 
   @media (max-width: 769px) {
-    max-width: 320px;
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
     justify-items: center;
     gap: 30px;
   }
@@ -150,13 +152,21 @@
   }
 
   @media (max-width: 769px) {
-    width: 270px;
+    width: 100%;
   }
 }
 
 .products__link {
   margin: 0;
   cursor: pointer;
+}
+
+.products__item:hover {
+  &:hover {
+    @media screen and (min-width: $vp-1024) {
+      border: 2px solid $deep-sky-blue;
+    }
+  }
 }
 
 .products__item p {
@@ -194,4 +204,8 @@
 
 .products__img img {
   width: 100%;
+
+  @media (max-width: 769px) {
+    height: 250px;
+  }
 }

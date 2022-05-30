@@ -129,6 +129,13 @@
     width: 160px;
     padding: 7px 12px;
   }
+
+  &:hover {
+    @media screen and (min-width: $vp-1024) {
+      border: 1px solid $black-pearl;
+      color: $black-pearl;
+    }
+  }
 }
 
 .description__paragraph span {
