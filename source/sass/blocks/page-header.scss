@@ -1,4 +1,5 @@
 .page-header {
+  position: fixed;
   top: 0;
   z-index: 100;
   margin: 0 auto;
@@ -6,11 +7,7 @@
   min-height: 120px;
   width: 100%;
   padding-top: 30px;
-  background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
-
-  @media (min-width: 1024px) {
-    position: fixed;
-  }
+  background: linear-gradient(180deg, $black-pearl 84.9%, rgba(4, 24, 39, 0) 100%);
 
   @include vp-1023 {
     position: absolute;
@@ -37,7 +34,7 @@
 
   @media (max-width: 1248px) {
     width: 1024px;
-    padding-bottom: 0;
+    padding-bottom: 25;
   }
 
   @include vp-1023 {
@@ -63,7 +60,7 @@
   margin-right: 145px;
 
   @media (max-width: 1248px) {
-    margin-right: 120px;
+    margin-right: 50px;
   }
 
   @include vp-1023 {
@@ -73,53 +70,67 @@
 
   @media (max-width: 769px) {
     padding-top: 0;
-    margin-right: 133px;
+    margin-right: 90px;
   }
 }
 
-.page-header__contacts {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 630px;
-}
-
-.page-header__contacts--email {
-  margin-right: 106px;
-
-  @media (max-width: 1248px) {
-    margin-right: 20px;
-  }
-
-  @include vp-1023 {
-    margin: 0;
-    margin-left: auto;
-    margin-right: 12px;
-  }
+.page-header__logo {
+  margin: 0;
+  padding: 0;
 
   @media (max-width: 769px) {
-    margin-left: auto;
-    margin-right: 37px;
+    display: none;
   }
 }
 
-.page-header__contacts--phone {
-  margin-right: 152px;
+.page-header__logo-mobile {
+  display: none;
+
+  @media (max-width: 769px) {
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+}
+
+.page-header__contacts-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 32px;
+  margin: 0;
+  padding: 0;
+  max-width: 630px;
+  margin-right: 150px;
 
   @media (max-width: 1248px) {
-    margin-right: 50px;
+    max-width: 500px;
+    margin-right: 35px;
   }
 
   @include vp-1023 {
     margin-right: 0;
+    column-gap: 0;
   }
 
   @media (max-width: 769px) {
-    margin-left: 0;
+    justify-items: end;
+    width: 119px;
   }
 }
+
+
+.page-header__contacts--email {
+  @include vp-1023 {
+    margin: 0;
+    margin-right: 5px;
+  }
+
+  @media (max-width: 769px) {
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+
 
 .page-header__contacts--email,
 .page-header__contacts--phone {
@@ -182,24 +193,7 @@
   }
 }
 
-.page-header__logo {
-  margin: 0;
-  padding: 0;
 
-  @media (max-width: 769px) {
-    display: none;
-  }
-}
-
-.page-header__logo-mobile {
-  display: none;
-
-  @media (max-width: 769px) {
-    margin: 0;
-    padding: 0;
-    display: block;
-  }
-}
 
 .page-header__button {
   margin: 0;
